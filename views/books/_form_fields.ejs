@@ -1,12 +1,12 @@
 <div>
   <label for="titleInput">Title</label>
-  <input type="text" id="titleInput" name="title" value="<%= book.title %> " />
+  <input type="text" id="titleInput" name="title" value="<%= book.title %>" />
 </div>
 <div>
   <label for="auhtorInput">Author</label>
   <select name="author" id="auhtorInput">
     <% authors.forEach(author => { %>
-      <% if (author.id === book.authorId) { %>
+      <% if (author.id === book.author) { %>
         <option selected label="<%= author.name %>" value="<%= author.id %>">
       <% } else {%>
         <option label="<%= author.name %>" value="<%= author.id %>">
